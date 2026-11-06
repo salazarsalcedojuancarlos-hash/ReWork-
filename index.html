@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1 class="logo">ReWork</h1>
+        </header>
+
+        <section class="form-card">
+            <div class="input-row">
+                <input type="date" id="fecha">
+                <input type="number" id="pagoHora" placeholder="Pago/Hr $">
+            </div>
+            <div class="input-row">
+                <div class="input-field">
+                    <label>Entrada</label>
+                    <input type="time" id="entrada">
+                </div>
+                <div class="input-field">
+                    <label>Salida</label>
+                    <input type="time" id="salida">
+                </div>
+            </div>
+            <div class="input-field">
+                <label>Receso (minutos)</label>
+                <input type="number" id="receso" value="0">
+            </div>
+            <button id="btnGuardar">Guardar Registro</button>
+        </section>
+
+        <div id="historial">
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
